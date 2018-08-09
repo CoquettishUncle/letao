@@ -18,6 +18,9 @@ body{
   padding: 0;
   list-style: none;
 }
+.mb_20{
+  margin-bottom: 20px;
+}
 .red{
   color:red;
 }
@@ -94,7 +97,7 @@ a:active{
   height: 2000px;
   width: 100%;
   padding-left: 180px;
-  background-color: #ccc;
+  background-color: #fff;
   padding-top: 50px;
   transition: all 1s;
 }
@@ -127,4 +130,16 @@ a:active{
 /* comtent */
 .container-fluid{
   margin-top: 20px;
+}
+
+.echarts_1,
+.echarts_2 {
+  width: 48%;
+  height: 400px;
+}
+
+.table.table-bordered th,
+.table.table-bordered td {
+  text-align: center;
+  vertical-align: middle;
 }
