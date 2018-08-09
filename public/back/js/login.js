@@ -65,6 +65,7 @@ $("#form").on('success.form.bv', function (e) {
     url:'/employee/employeeLogin',
     data:$('#form').serialize(),
     success:function (info){
+      console.log(info);
       if(info.success){
         location.href = 'index.html'
       }
@@ -72,7 +73,7 @@ $("#form").on('success.form.bv', function (e) {
         $('#form').data("bootstrapValidator").updateStatus("username", "INVALID", "callback")
       }
       if(info.error == 1001){
-        $('#form').data("bootstrapValidator").updateStatus("username", "INVALID", "callback")
+        $('#form').data("bootstrapValidator").updateStatus("password", "INVALID", "callback")
       }
     }
   })
